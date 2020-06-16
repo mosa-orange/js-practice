@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KANA MIYAMOTO TEST-SITE</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__navList">
+          <li class="header__navItem"><a href="#">HOME</a></li>
+          <li class="header__navItem"><a href="#">Dropdown Menu</a></li>
+          <li class="header__navItem"><a href="#">Tab</a></li>
+          <li class="header__navItem"><a href="#">Modal</a></li>
+          <li class="header__navItem"><a href="#">Clusel</a></li>
+          <li class="header__navItem"><a href="#">Loading action</a></li>
+          <li class="header__navItem"><a href="#">Smooth scroll</a></li>
+          <li class="header__navItem"><a href="#">Scroll action</a></li>
+        </ul>
+      </nav>
+      <div class="header__navBtn" id="js-hamburger">
+        <span class="header__navBtnLine"></span>
+        <span class="header__navBtnLine"></span>
+        <span class="header__navBtnLine"></span>
+      </div>
+      <div class="black-bg" id="js-black-bg"></div>
+    </header>
+
+    <main>
+      <div class="mainVisual">
+        <p>Practice</p>
+      </div>
+      <section class="lists">
+        <div class="modalBox">
+          <div id="open">
+            詳細を見る
+          </div>
+          <div id="mask" class="hidden"></div>
+          <section id="modal" class="hidden">
+            <p>こんにちは。こんにちは。こんにちは。</p>
+            <div id="close">閉じる</div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+  </body>
+</html>
