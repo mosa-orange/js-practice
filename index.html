@@ -13,9 +13,9 @@
       <nav class="header__nav">
         <ul class="header__navList">
           <li class="header__navItem"><a href="#">HOME</a></li>
+          <li class="header__navItem"><a href="#">Modal</a></li>
           <li class="header__navItem"><a href="#">Dropdown Menu</a></li>
           <li class="header__navItem"><a href="#">Tab</a></li>
-          <li class="header__navItem"><a href="#">Modal</a></li>
           <li class="header__navItem"><a href="#">Clusel</a></li>
           <li class="header__navItem"><a href="#">Loading action</a></li>
           <li class="header__navItem"><a href="#">Smooth scroll</a></li>
@@ -36,16 +36,22 @@
       <div class="mainVisual">
         <p>Practice</p>
       </div>
-      <section class="lists">
-        <div class="modalBox">
-          <div id="open">
-            詳細を見る
+
+      <section class="section">
+        <div class="section__inner">
+          <div class="section__title">Modal</div>
+          <div class="section__detail">
+            <!-- モーダル -->
+            <div class="modalBox">
+              <div class="modalBox__btn" id="js-open">詳細を見る</div>
+              <div class="modalBox__mask is-hidden" id="js-mask"></div>
+              <div class="modalBox__modal is-hidden" id="js-modal">
+                  <p>モーダル表示中</p>
+                  <div class="modalBox__modalCloseBtn" id="js-close">閉じる</div>
+              </div>
+            </div>
+            <!-- /モーダル -->
           </div>
-          <div id="mask" class="hidden"></div>
-          <section id="modal" class="hidden">
-            <p>こんにちは。こんにちは。こんにちは。</p>
-            <div id="close">閉じる</div>
-          </section>
         </div>
       </section>
     </main>

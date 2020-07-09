@@ -10,14 +10,20 @@ a {
   text-decoration: none;
 }
 
+/*=============================
+* header
+=============================*/
 .header {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: start;
   align-items: center;
   width: 100%;
   height: 84px;
   margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+  z-index: 100;
 }
 
 .header__title {
@@ -34,7 +40,7 @@ a {
   top: 0;
   right: 0;
   background-color: #fff;
-  width: 350px;
+  width: 250px;
   height: 100vh;
   padding: 84px 0 0 50px;
   z-index: 100;
@@ -123,11 +129,13 @@ a {
   transform: translateY(-20px) rotate(45deg);
 }
 
+/*=============================
+* main
+=============================*/
 .mainVisual {
   width: 100%;
   padding-top: 84px;
   font-size: 30px;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -140,17 +148,38 @@ a {
   align-items: center;
 }
 
-.lists {
+.section {
   width: 100%;
-  margin: 50px auto 0;
+  height: 300px;
+  margin-top: 80px;
+}
+
+.section__inner {
+  margin: 0 auto;
+  max-width: 80%;
+  width: 960px;
+}
+
+.section__title {
+  background-color: #80c5c5;
+  border-radius: 4px 4px 0 0;
+  padding: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.section__detail {
+  padding: 30px;
+  border: 2px solid #80c5c5;
 }
 
 .modalBox {
+  position: relative;
   margin: 0 auto;
   text-align: center;
 }
 
-#open, #close {
+.modalBox__btn, .modalBox__modalCloseBtn {
   cursor: pointer;
   width: 200px;
   padding: 20px;
@@ -160,7 +189,7 @@ a {
   margin: 0 auto;
 }
 
-#mask {
+.modalBox__mask {
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
@@ -169,26 +198,26 @@ a {
   left: 0;
 }
 
-#modal {
+.modalBox__mask.is-hidden {
+  display: none;
+}
+
+.modalBox__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #fff;
-  width: 300px;
+  max-width: 300px;
+  width: 80%;
   padding: 20px;
   border-radius: 4px;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 
-#modal p {
-  padding-bottom: 20px;
-}
-
-#modal.hidden {
-  transform: translate(0, -500px);
-}
-
-#mask.hidden {
+.modalBox__modal.is-hidden {
   display: none;
+}
+
+.modalBox__modal p {
+  padding-bottom: 20px;
 }
