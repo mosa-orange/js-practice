@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style:none;
+}
+
 /*=============================
 * header
 =============================*/
@@ -158,7 +162,6 @@ a {
 // section
 .section {
   width: 100%;
-  height: 300px;
   margin-top: 80px;
 
   &__inner {
@@ -166,7 +169,7 @@ a {
     max-width: 80%;
     width: 960px;
   }
-
+  
   &__title  {
     background-color: #80c5c5;
     border-radius: 4px 4px 0 0;
@@ -174,17 +177,20 @@ a {
     font-size: 20px;
     color: #fff;
   }
-
+  
   &__detail {
+    height: 250px;
     padding: 30px;
     border: 2px solid #80c5c5;
   }
 }
 
+// modal
 .modalBox {
   position: relative;
   margin: 0 auto;
   text-align: center;
+  margin-top: 60px;
 
   &__btn,&__modalCloseBtn {
     cursor: pointer;
@@ -227,6 +233,46 @@ a {
 
     p {
       padding-bottom: 20px;
+    }
+  }
+}
+
+// Dropdown Menu
+.dropdownMenu {
+  &__list {
+    display: flex;
+    max-width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    color: #fff;
+    
+    > li {
+      width: 400px;
+      height: 40px;
+      text-align: center;
+      margin-left: 1px;
+      background-color: #80C5C5;
+      line-height: 2.5;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  &__listItem {
+    display: none;
+    background-color: #80C5C5;
+
+    > li {
+      height: 40px;
+      line-height: 2.5;
+      background-color: #008B8B;
+      margin-top: 1px;
+
+      a {
+        color: #fff;
+      }
     }
   }
 }
