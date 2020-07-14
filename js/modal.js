@@ -1,21 +1,22 @@
 // jQuery対応
+var hiddenClass = "is-hidden";
+var openBtn = $("#js-open");
+var closeBtn = $("#js-close,#js-mask");
+var modalArea = $("#js-modal");
+
 $(function(){
-    $("#js-open").click(modalOpen);
+    openBtn.click(modalOpen);
+    closeBtn.click(modalClose);
 
-    $("#js-close").click(modalClose);
-
-    $("#js-mask").click(modalClose);
-
-    function modalOpen (){
-        $("#js-mask").removeClass("is-hidden");
-        $("#js-modal").removeClass("is-hidden");
+    function modalOpen(){
+        closeBtn.removeClass(hiddenClass);
+        modalArea.removeClass(hiddenClass);
     }
 
-    function modalClose (){
-        $("#js-mask").addClass("is-hidden");
-        $("#js-modal").addClass("is-hidden");
+    function modalClose(){
+        closeBtn.addClass(hiddenClass);
+        modalArea.addClass(hiddenClass);
     }
-
 });
 
 // JS対応
@@ -36,7 +37,7 @@ $(function(){
         mask.classList.add('is-hidden');
     });
 
-    mask.addEventListener('click', () => {
-        close.click();
-    });
-}
+//     mask.addEventListener('click', () => {
+//         close.click();
+//     });
+// }
