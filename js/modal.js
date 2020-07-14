@@ -16,7 +16,8 @@ $(function(){
     function modalClose(){
         closeBtn.addClass(hiddenClass);
         modalArea.addClass(hiddenClass);
-    }
+    }koko
+    
 });
 
 // JS対応
@@ -37,7 +38,7 @@ $(function(){
         mask.classList.add('is-hidden');
     });
 
-//     mask.addEventListener('click', () => {
-//         close.click();
-//     });
-// }
+    mask.addEventListener('click', () => {
+        close.click();
+    });
+}
