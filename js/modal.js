@@ -16,8 +16,7 @@ $(function(){
     function modalClose(){
         closeBtn.addClass(hiddenClass);
         modalArea.addClass(hiddenClass);
-    }koko
-    
+    }
 });
 
 // JS対応
