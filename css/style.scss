@@ -276,3 +276,21 @@ li {
     }
   }
 }
+
+// smoothScroll
+.smoothScrollWrapper {
+  margin-top: 60px;
+  text-align: center;
+
+  .smoothScroll {
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid rgb(0, 139, 139);
+    border-radius: 4px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+  }
+}

@@ -263,3 +263,20 @@ li {
 .dropdownMenu__listItem > li a {
   color: #fff;
 }
+
+.smoothScrollWrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.smoothScrollWrapper .smoothScroll {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid darkcyan;
+  border-radius: 4px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+}
