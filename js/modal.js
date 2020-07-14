@@ -5,8 +5,8 @@ var closeBtn = $("#js-close,#js-mask");
 var modalArea = $("#js-modal");
 
 $(function(){
-    openBtn.click(modalOpen);
-    closeBtn.click(modalClose);
+    openBtn.on('click',modalOpen);
+    closeBtn.on('click',modalClose);
 
     function modalOpen(){
         closeBtn.removeClass(hiddenClass);
@@ -27,17 +27,17 @@ $(function(){
     const modal = document.getElementById('js-modal');
     const mask = document.getElementById('js-mask');
 
-    open.addEventListener('click', () => {
+    open.addEventListener('click',function(){
         modal.classList.remove('is-hidden');
         mask.classList.remove('is-hidden');
     });
 
-    close.addEventListener('click', () => {
+    close.addEventListener('click',function(){
         modal.classList.add('is-hidden');
         mask.classList.add('is-hidden');
     });
 
-    mask.addEventListener('click', () => {
+    mask.addEventListener('click',function(){
         close.click();
     });
 }
