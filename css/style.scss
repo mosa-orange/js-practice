@@ -262,13 +262,20 @@ li {
 
   &__listItem {
     display: none;
-    background-color: #80C5C5;
+
+    &.is-active {
+      display: block;
+    }
 
     > li {
       height: 40px;
       line-height: 2.5;
       background-color: #008B8B;
       margin-top: 1px;
+
+      &:hover {
+        opacity: 0.8;
+      }
 
       a {
         color: #fff;

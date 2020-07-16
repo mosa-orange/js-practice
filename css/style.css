@@ -250,7 +250,10 @@ li {
 
 .dropdownMenu__listItem {
   display: none;
-  background-color: #80C5C5;
+}
+
+.dropdownMenu__listItem.is-active {
+  display: block;
 }
 
 .dropdownMenu__listItem > li {
@@ -258,6 +261,10 @@ li {
   line-height: 2.5;
   background-color: #008B8B;
   margin-top: 1px;
+}
+
+.dropdownMenu__listItem > li:hover {
+  opacity: 0.8;
 }
 
 .dropdownMenu__listItem > li a {
