@@ -1,10 +1,14 @@
 @charset "UTF-8";
 
 body {
-  box-sizing: border-box;
   font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
   text-decoration: none;
   font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 a {
@@ -179,7 +183,7 @@ li {
   }
   
   &__detail {
-    height: 250px;
+    height: 310px;
     padding: 30px;
     border: 2px solid #80c5c5;
   }
@@ -194,7 +198,7 @@ li {
 
   &__btn,&__modalCloseBtn {
     cursor: pointer;
-    width: 200px;
+    width: 240px;
     padding: 20px;
     border: 1px solid #008b8b;
     border-radius: 4px;
@@ -292,12 +296,56 @@ li {
   .smoothScroll {
     text-align: center;
     display: inline-block;
-    width: 200px;
+    width: 240px;
     padding: 20px;
     border: 1px solid rgb(0, 139, 139);
     border-radius: 4px;
     text-align: center;
     color: #000;
     cursor: pointer;
+  }
+}
+
+// Tab
+.tab {
+  &__list {
+    display: flex;
+    max-width: 600px;
+    height: 40px;
+    margin: 0 auto;
+    color: #fff;
+
+    > li {
+      width: 600px;
+      height: 40px;
+      text-align: center;
+      margin-left: 1px;
+      background-color: #80C5C5;
+      line-height: 2.5;
+      cursor: pointer;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+
+      &.is-active {
+        background-color: #008B8B;
+      }
+    }
+  }
+
+  &__Box {
+    display: none;
+    max-width: 600px;
+    height: 150px;
+    padding: 30px;
+    line-height: 1.5;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #008B8B;
+
+      &.is-active{
+      display: block;
+    }
   }
 }
