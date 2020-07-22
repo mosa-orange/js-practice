@@ -332,3 +332,63 @@ li {
 .tab__Box.is-active {
   display: block;
 }
+
+.clusel {
+  /* slick setting */
+}
+
+.clusel__slider {
+  margin: 0 auto;
+}
+
+.clusel__slidesList {
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+}
+
+.clusel__slidesList li {
+  position: relative;
+  background-color: #80C5C5;
+  line-height: 200px;
+  text-align: center;
+}
+
+.clusel__slidesList li a {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.clusel .slick-prev {
+  left: -35px;
+}
+
+.clusel .slick-next:before,
+.clusel .slick-prev:before {
+  content: '>';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #008B8B;
+  font-size: 16px;
+}
+
+.clusel .slick-prev:before {
+  content: '<';
+}
+
+.clusel .slick-dots li {
+  border-radius: 50%;
+}
+
+.clusel .slick-dots li button::before {
+  border-radius: 50%;
+  font-size: 0;
+}

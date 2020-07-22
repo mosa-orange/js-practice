@@ -349,3 +349,67 @@ li {
     }
   }
 }
+
+//Clusel(slick実装)
+.clusel {
+  &__slider {
+    margin: 0 auto;
+  }
+
+  &__slidesList  {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+
+    li {
+      position: relative;
+      background-color: #80C5C5;
+      line-height: 200px;
+      text-align: center;
+
+      a {
+        display:inline-block;
+        vertical-align: middle;
+        line-height:normal;
+      }
+    }
+  }
+
+  /* slick setting */
+  .slick-prev {
+    left: -35px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #008B8B;
+    font-size: 16px;
+  }
+  
+  .slick-prev:before {
+    content: '<';
+  }
+
+  .slick-dots {
+    li {
+      border-radius: 50%;
+      
+      button {
+        &::before {
+        border-radius: 50%;
+        font-size: 0;
+        }
+      }
+    }
+  }
+}
