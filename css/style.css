@@ -19,6 +19,47 @@ li {
 }
 
 /*=============================
+* Loading Action
+=============================*/
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 200;
+}
+
+.loading__contents {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.loading__contents img {
+  width: 250px;
+  height: 244px;
+  margin-left: -125px;
+  margin-top: -125px;
+}
+
+.loading__contents p {
+  width: 250px;
+  margin-left: -125px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*=============================
+* contentsWrapper
+=============================*/
+.contentsWrapper.is-hidden {
+  display: none;
+}
+
+/*=============================
 * header
 =============================*/
 .header {

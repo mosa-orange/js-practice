@@ -8,148 +8,158 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
-
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__title">TEST-SITE</h1>
-      <nav class="header__nav">
-        <ul class="header__navList">
-          <li class="header__navItem"><a href="#">HOME</a></li>
-          <li class="header__navItem"><a href="#">Modal</a></li>
-          <li class="header__navItem"><a href="#">Dropdown Menu</a></li>
-          <li class="header__navItem"><a href="#">Tab</a></li>
-          <li class="header__navItem"><a href="#">Clusel</a></li>
-          <li class="header__navItem"><a href="#">Loading action</a></li>
-          <li class="header__navItem"><a href="#">Smooth scroll</a></li>
-          <li class="header__navItem"><a href="#">Scroll action</a></li>
-        </ul>
-      </nav>
-      <div class="header__navBg"></div>
-      <div class="header__navBtnWrapper"  id="js-hamburger">
-        <div class="header__navBtn">
-          <span class="header__navBtnLine"></span>
-          <span class="header__navBtnLine"></span>
-          <span class="header__navBtnLine"></span>
-        </div> 
+    <!-- Loading action -->
+    <div class="loading">
+      <div class="loading__contents">
+        <img src="img/loading_icon_neko.png" alt="パソコン前に座る猫">
+        <p>loading...</p>
       </div>
-    </header>
-    
-    <main>
-      <div class="mainVisual">
-        <p>Practice</p>
-      </div>
-      <section class="section">
-        <div class="section__inner">
-          <div class="section__title">Modal</div>
-          <div class="section__detail">
-            <!-- Modal -->
-            <div class="modalBox">
-              <div class="modalBox__btn" id="js-open">詳細を見る</div>
-              <div class="modalBox__mask is-hidden" id="js-mask"></div>
-              <div class="modalBox__modal is-hidden" id="js-modal">
-                  <p>モーダル表示中</p>
-                  <div class="modalBox__modalCloseBtn" id="js-close">閉じる</div>
-              </div>
-            </div>
-            <!-- /Modal -->
-          </div>
+    </div>
+    <!-- /Loading action -->
+
+    <div class="contentsWrapper">
+      <header class="header">
+        <h1 class="header__title">TEST-SITE</h1>
+        <nav class="header__nav">
+          <ul class="header__navList">
+            <li class="header__navItem"><a href="#">HOME</a></li>
+            <li class="header__navItem"><a href="#">Modal</a></li>
+            <li class="header__navItem"><a href="#">Dropdown Menu</a></li>
+            <li class="header__navItem"><a href="#">Tab</a></li>
+            <li class="header__navItem"><a href="#">Clusel</a></li>
+            <li class="header__navItem"><a href="#">Loading action</a></li>
+            <li class="header__navItem"><a href="#">Smooth scroll</a></li>
+            <li class="header__navItem"><a href="#">Scroll action</a></li>
+          </ul>
+        </nav>
+        <div class="header__navBg"></div>
+        <div class="header__navBtnWrapper"  id="js-hamburger">
+          <div class="header__navBtn">
+            <span class="header__navBtnLine"></span>
+            <span class="header__navBtnLine"></span>
+            <span class="header__navBtnLine"></span>
+          </div> 
         </div>
-      </section>
+      </header>
       
-      <section class="section">
-        <div class="section__inner">
-          <div class="section__title">Dropdown Menu</div>
-          <div class="section__detail">
-            <!-- Dropdown Menu -->
-            <div class="dropdownMenu">
-              <ul class="dropdownMenu__list">
-                <li class="dropdownMenu__listItemWrap">Blog
-                  <ul class="dropdownMenu__listItem">
-                    <li><a href="#">Blog1</a></li>
-                    <li><a href="#">Blog2</a></li>
-                    <li><a href="#">Blog3</a></li>
-                    <li><a href="#">Blog4</a></li>
-                  </ul>
-                </li>
-                <li class="dropdownMenu__listItemWrap">Service
-                  <ul class="dropdownMenu__listItem">
-                    <li><a href="#">Service1</a></li>
-                    <li><a href="#">Service2</a></li> 
-                    <li><a href="#">Service3</a></li>
-                    <li><a href="#">Service4</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <!-- /Dropdown Menu -->
-          </div>
+      <main>
+        <div class="mainVisual">
+          <p>Practice</p>
         </div>
-      </section>
-
-      <section class="section">
-        <div class="section__inner">
-          <div class="section__title">Smooth scroll</div>
-          <div class="section__detail">
-            <!-- Smooth scroll -->
-            <div class="smoothScrollWrapper">
-              <div class="smoothScroll" id="smoothScroll">クリックでページトップへ</div>
+        <section class="section">
+          <div class="section__inner">
+            <div class="section__title">Modal</div>
+            <div class="section__detail">
+              <!-- Modal -->
+              <div class="modalBox">
+                <div class="modalBox__btn" id="js-open">詳細を見る</div>
+                <div class="modalBox__mask is-hidden" id="js-mask"></div>
+                <div class="modalBox__modal is-hidden" id="js-modal">
+                    <p>モーダル表示中</p>
+                    <div class="modalBox__modalCloseBtn" id="js-close">閉じる</div>
+                </div>
+              </div>
+              <!-- /Modal -->
             </div>
-            <!-- /Smooth scroll -->
           </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section__inner">
-          <div class="section__title">Tab</div>
-          <div class="section__detail">
-            <!-- Tab -->
-            <div class="tab">
-              <ul class="tab__list">
-                <li class="is-active">Blog1</li>
-                <li>Blog2</li>
-                <li>Blog3</li>
-              </ul>
-              <div class="tab__Box is-active">
-                <p>Blog1</p>
-                <p>今週は、東京へ行ってきました。</p>
+        </section>
+        
+        <section class="section">
+          <div class="section__inner">
+            <div class="section__title">Dropdown Menu</div>
+            <div class="section__detail">
+              <!-- Dropdown Menu -->
+              <div class="dropdownMenu">
+                <ul class="dropdownMenu__list">
+                  <li class="dropdownMenu__listItemWrap">Blog
+                    <ul class="dropdownMenu__listItem">
+                      <li><a href="#">Blog1</a></li>
+                      <li><a href="#">Blog2</a></li>
+                      <li><a href="#">Blog3</a></li>
+                      <li><a href="#">Blog4</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdownMenu__listItemWrap">Service
+                    <ul class="dropdownMenu__listItem">
+                      <li><a href="#">Service1</a></li>
+                      <li><a href="#">Service2</a></li> 
+                      <li><a href="#">Service3</a></li>
+                      <li><a href="#">Service4</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-              <div class="tab__Box">
-                <p>Blog２</p>
-                <p>今週は、大阪へ行ってきました。</p>
-              </div>
-              <div class="tab__Box">
-                <p>Blog３</p>
-                <p>今週は、名古屋へ行ってきました。</p>
-              </div>
+              <!-- /Dropdown Menu -->
             </div>
-            <!-- /Tab -->
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section">
-        <div class="section__inner">
-          <div class="section__title">Tab</div>
-          <div class="section__detail">
-            <!-- Clusel -->
-            <div class="clusel">
-              <div class="clusel__slides">
-                <ul class="clusel__slidesList slider">
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-              </ul>
+        <section class="section">
+          <div class="section__inner">
+            <div class="section__title">Smooth scroll</div>
+            <div class="section__detail">
+              <!-- Smooth scroll -->
+              <div class="smoothScrollWrapper">
+                <div class="smoothScroll" id="smoothScroll">クリックでページトップへ</div>
               </div>
+              <!-- /Smooth scroll -->
             </div>
-            <!-- /Clusel -->
           </div>
-        </div>
-      </section>
+        </section>
 
-    </main>
+        <section class="section">
+          <div class="section__inner">
+            <div class="section__title">Tab</div>
+            <div class="section__detail">
+              <!-- Tab -->
+              <div class="tab">
+                <ul class="tab__list">
+                  <li class="is-active">Blog1</li>
+                  <li>Blog2</li>
+                  <li>Blog3</li>
+                </ul>
+                <div class="tab__Box is-active">
+                  <p>Blog1</p>
+                  <p>今週は、東京へ行ってきました。</p>
+                </div>
+                <div class="tab__Box">
+                  <p>Blog２</p>
+                  <p>今週は、大阪へ行ってきました。</p>
+                </div>
+                <div class="tab__Box">
+                  <p>Blog３</p>
+                  <p>今週は、名古屋へ行ってきました。</p>
+                </div>
+              </div>
+              <!-- /Tab -->
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__inner">
+            <div class="section__title">Tab</div>
+            <div class="section__detail">
+              <!-- Clusel -->
+              <div class="clusel">
+                <div class="clusel__slides">
+                  <ul class="clusel__slidesList slider">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+                </div>
+              </div>
+              <!-- /Clusel -->
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
@@ -159,5 +169,7 @@
     <script type="text/javascript" src="js/clusel.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/clusel-slick.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script>
+
   </body>
 </html>
