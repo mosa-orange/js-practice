@@ -9,8 +9,7 @@ $(function(){
     $(window).scroll(function(){
         $(this).scrollTop();
         //console.log($(this).scrollTop());
-        //コンフリクト起こすために
-        if($(this).scrollTop() > 650){
+        if($(this).scrollTop() > 850){
             smoothScrollBtn.fadeIn();
         }else{
             smoothScrollBtn.fadeOut();
