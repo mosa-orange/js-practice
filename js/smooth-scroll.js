@@ -9,7 +9,7 @@ $(function(){
     $(window).scroll(function(){
         $(this).scrollTop();
         //console.log($(this).scrollTop());
-        if($(this).scrollTop() > 850){
+        if($(this).scrollTop() > 0){
             smoothScrollBtn.fadeIn();
         }else{
             smoothScrollBtn.fadeOut();
