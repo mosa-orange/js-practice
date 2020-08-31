@@ -8,7 +8,7 @@ $(function(){
     //ウィンドウがある程度スクロールされたら、#smoothScrollが出現、それ以外のときは非表示
     $(window).scroll(function(){
         $(this).scrollTop();
-        //console.log($(this).scrollTop());
+        console.log($(this).scrollTop());
         if($(this).scrollTop() > 850){
             smoothScrollBtn.fadeIn();
         }else{
